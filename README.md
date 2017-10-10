@@ -1,5 +1,5 @@
 # Motion-Detection
-An application for motion detection using any camera device and analysis of output data using plot and CSV file
+An application using python programming concept for motion detection using any camera device and analysis of output data using plot and CSV file
 
 Interpreter: Python 3.6.2
 features: 1. Can detect any type of motion around the environment
