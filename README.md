@@ -8,4 +8,4 @@ features: 1. Can detect any type of motion around the environment
           4. Also generates chart for motion detection
           5. Easy to use for night vision camera to capture motion in dark
 
-version: 2017.1 and next is coming soon
+version: V1.0 and next is coming soon
