@@ -1,7 +1,18 @@
+"""Author: Martial Himanshu
+licence: General public licences
+Interpreter: Python 3.6.2
+features: 1. Can detect any type of motion around the environment
+          2. can detect human as well as animals motion
+          3. Generates csv file of list of time parameter when motion appears and vanished
+          4. Also generates chart for motion detection
+          5. Easy to use for night vision camera to capture motion in dark 
+version: 2017.1 and next is coming soon"""
+
 import cv2,time,pandas
 from datetime import datetime
 #f_cascade=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 first_frame = None
+"store first image as list of numpy array's data"
 video = cv2.VideoCapture(0)
 status_list=[None,None]
 times=[]
@@ -57,6 +68,7 @@ while True:
 
 print(status_list)
 print(times)
+"Prints data of status list and time data of motion detection in terminal"
 
 for i in range(0,len(times),2):
     df=df.append({"Start":times[i],"End":times[i+1]},ignore_index=True)
